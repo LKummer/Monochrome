@@ -1,0 +1,28 @@
+.navigation {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+
+  &-item {
+    color: var(--color-foreground-500);
+    display: inline-block;
+    font-size: var(--type-size-200);
+    font-weight: var(--type-weight-500);
+    padding: var(--space-200);
+    text-decoration: none;
+
+    &-active {
+      border-bottom: var(--space-50) solid var(--color-foreground-400);
+      color: var(--color-foreground-400);
+      padding-bottom: calc(var(--space-200) - var(--space-50));
+    }
+
+    &-title {
+      padding-left: 0;
+    }
+
+    &-grow {
+      flex-grow: 1;
+    }
+  }
+}

@@ -3,9 +3,9 @@
 
 .l-container {
   @include break.media-only('small', screen.$breakpoints) {
-    width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
+    width: 100%;
   }
   @include break.media-only('large', screen.$breakpoints) {
     width: 580px;

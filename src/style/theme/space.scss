@@ -4,6 +4,7 @@
 }
 
 :root {
+  @include -space-variable('50', 0.25rem);
   @include -space-variable('100', 0.5rem);
   @include -space-variable('200', 1rem);
   @include -space-variable('300', 1.5rem);
