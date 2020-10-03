@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{ absURL "/main.css" }}">
     <title>{{ .Title }}</title>
   </head>
-  <body>
+  <body class="l-container">
     {{- block "main" . }}{{- end }}
     <script src='{{ absURL "/main.js" }}'></script>
   </body>

@@ -1,0 +1,16 @@
+@use '@lkummer/break' as break;
+@use '../theme/screen';
+
+.l-container {
+  @include break.media-only('small', screen.$breakpoints) {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  @include break.media-only('large', screen.$breakpoints) {
+    width: 580px;
+  }
+
+  margin-left: auto;
+  margin-right: auto;
+}
