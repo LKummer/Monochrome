@@ -23,6 +23,7 @@
     &-tags {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
       list-style: none;
       margin-bottom: var(--space-200);
 
