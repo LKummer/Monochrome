@@ -11,6 +11,14 @@
     padding: var(--space-200);
     text-decoration: none;
 
+    &:hover {
+      color: var(--color-foreground-400);
+    }
+
+    &:active {
+      color: var(--color-foreground-300);
+    }
+
     &-active {
       border-bottom: var(--space-50) solid var(--color-foreground-400);
       color: var(--color-foreground-400);

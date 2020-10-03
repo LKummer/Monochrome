@@ -12,6 +12,15 @@
       font-weight: var(--type-weight-600);
       margin-bottom: var(--space-100);
       text-decoration: none;
+
+      &:hover {
+        color: var(--color-foreground-400);
+        text-decoration: underline;
+      }
+
+      &:active {
+        color: var(--color-foreground-300);
+      }
     }
 
     &-summary {
@@ -36,6 +45,14 @@
       &-tag {
         color: var(--color-foreground-400);
         margin-right: var(--space-200);
+
+        &:hover {
+          color: var(--color-foreground-300);
+        }
+
+        &:active {
+          color: var(--color-foreground-200);
+        }
       }
     }
   }
