@@ -1,0 +1,41 @@
+.posts {
+  list-style: none;
+  margin-top: var(--space-500);
+
+  &-item {
+    margin-bottom: var(--space-500);
+
+    &-title {
+      color: var(--color-foreground-500);
+      display: block;
+      font-size: var(--type-size-300);
+      font-weight: var(--type-weight-600);
+      margin-bottom: var(--space-100);
+      text-decoration: none;
+    }
+
+    &-summary {
+      color: var(--color-foreground-500);
+      font-family: var(--type-family-accent);
+      text-decoration: none;
+    }
+
+    &-tags {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      margin-bottom: var(--space-200);
+
+      &-date {
+        color: var(--color-foreground-400);
+        font-weight: var(--type-weight-500);
+        margin-right: var(--space-400);
+      }
+
+      &-tag {
+        color: var(--color-foreground-400);
+        margin-right: var(--space-200);
+      }
+    }
+  }
+}

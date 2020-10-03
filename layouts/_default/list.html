@@ -1,9 +1,28 @@
 {{ define "main" }}
 <nav>
-  <ul>
+  <ul class="posts">
     {{ range .Pages }}
-    <li>
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <li class="posts-item">
+      <a href="{{ .Permalink }}" class="posts-item-title">{{ .Title }}</a>
+      <ul class="posts-item-tags">
+        <li class="posts-item-tags-date">
+          {{ .Date.Format "2/1/2006" }}
+        </li>
+        {{ range .GetTerms "tags" }}
+        <li>
+          <a href={{ .Permalink }} class="posts-item-tags-tag">
+            {{ .LinkTitle }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+      <a href="{{ .Permalink }}" class="posts-item-summary">
+        {{ with .Params.description }}
+        {{ . | htmlUnescape | plainify }}
+        {{ else }}
+        {{ .Summary | htmlUnescape | plainify }}
+        {{ end }}
+      </a>
     </li>
     {{ end }}
   </ul>
