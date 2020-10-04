@@ -75,6 +75,10 @@
     padding: var(--space-400) var(--space-300);
   }
 
+  blockquote {
+    font-style: italic;
+  }
+
   code {
     font-family: var(--type-family-monospace);
   }
