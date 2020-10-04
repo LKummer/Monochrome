@@ -1,0 +1,33 @@
+.post {
+  &-title {
+    font-size: var(--type-size-300);
+    margin-bottom: var(--space-400);
+    margin-top: var(--space-500);
+  }
+
+  &-tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: var(--space-500);
+
+    &-date {
+      color: var(--color-foreground-400);
+      margin-right: var(--space-200);
+    }
+
+    &-tag {
+      color: var(--color-foreground-400);
+      margin-right: var(--space-200);
+
+      &:hover {
+        color: var(--color-foreground-300);
+      }
+
+      &:active {
+        color: var(--color-foreground-200);
+      }
+    }
+  }
+}
