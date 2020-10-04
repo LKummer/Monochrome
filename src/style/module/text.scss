@@ -66,4 +66,16 @@
   th {
     font-weight: var(--type-weight-500);
   }
+
+  pre {
+    background: var(--color-syntax-background);
+    color: var(--color-syntax-foreground);
+    margin: 0 0 var(--space-400) 0;
+    overflow: auto;
+    padding: var(--space-400) var(--space-300);
+  }
+
+  code {
+    font-family: var(--type-family-monospace);
+  }
 }

@@ -9,6 +9,7 @@ enableInlineShortcodes = true
 footnoteReturnLinkContents = "^"
 
 theme = "hugo-theme-boilerplate"
+pygmentsUseClasses = true
 sectionPagesMenu = "main"
 
 [menu]

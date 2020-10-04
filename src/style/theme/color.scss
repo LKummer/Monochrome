@@ -4,4 +4,10 @@
   --color-foreground-300: hsl(30, 15%, 40%);
   --color-foreground-400: hsl(30, 18%, 35%);
   --color-foreground-500: hsl(30, 20%, 25%);
+  --color-syntax-foreground: hsl(30, 75%, 98%);
+  --color-syntax-background: hsl(30, 60%, 10%);
+  --color-syntax-comment: hsl(30, 20%, 85%);
+  --color-syntax-special: hsl(30, 90%, 75%);
+  --color-syntax-operator: hsl(270, 80%, 80%);
+  --color-syntax-literal: hsl(30, 95%, 65%);
 }
