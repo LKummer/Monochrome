@@ -13,8 +13,10 @@
     <nav>
       <ul class="navigation">
         <li class="navigation-item-grow">
-          <a href="{{ absLangURL "" }}" class="navigation-item navigation-item-title">
-            {{ .Site.Title }}
+          <a href="{{ absLangURL "" }}">
+            <h1 class="navigation-item navigation-item-title">
+              {{ .Site.Title }}
+            </h1>
           </a>
         </li>
         {{ $current := . }}
