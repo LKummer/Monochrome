@@ -3,7 +3,11 @@
   <ul class="posts">
     {{ range .Pages }}
     <li class="posts-item">
-      <a href="{{ .Permalink }}" class="posts-item-title">{{ .Title }}</a>
+      <a href="{{ .Permalink }}" class="posts-item-title-link">
+        <h2 class="posts-item-title">
+          {{ .Title }}
+        </h2>
+      </a>
       <ul class="posts-item-tags">
         <li class="posts-item-tags-date">
           {{ .Date.Format "2/1/2006" }}

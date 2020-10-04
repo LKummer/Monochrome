@@ -11,6 +11,7 @@
       font-size: var(--type-size-300);
       font-weight: var(--type-weight-600);
       margin-bottom: var(--space-100);
+      margin-top: 0;
       text-decoration: none;
 
       &:hover {
@@ -20,6 +21,10 @@
 
       &:active {
         color: var(--color-foreground-300);
+      }
+
+      &-link {
+        text-decoration: none;
       }
     }
 
