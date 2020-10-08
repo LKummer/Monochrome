@@ -16,6 +16,7 @@ sectionPagesMenu = "main"
 
 [params]
   [params.seo]
+    description = "Monochrome theme demo website."
     logo = "logo.png"
     defaultImages = [
       "image-1x1.png",

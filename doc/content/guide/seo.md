@@ -20,7 +20,7 @@ title = "Hugo Themes"
   name = "Steve Francia"
 ```
 
-An organization logo and default article images are also required.
+A description, organization logo and default article images are also required.
 
 The organization logo `params.seo.logo` image must be in either JPG or PNG
 format, and sized 600px wide and 60px high.
@@ -35,6 +35,7 @@ For more information
 ```toml
 [params]
   [params.seo]
+    description = "Monochrome theme demo website."
     logo = "logo.png"
     defaultImages = [
       "image-1x1.png",
