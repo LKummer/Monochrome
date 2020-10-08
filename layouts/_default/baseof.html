@@ -8,6 +8,54 @@
     />
     <link rel="stylesheet" href="{{ absURL "/main.css" }}">
     <title>{{ .Title }}</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      {{- /* Schema for index and list pages. */ -}}
+      {{ if .IsNode }}
+      "@type": "Organization",
+      "name": "{{ .Site.Title }}",
+      "url": "{{ absURL "" }}",
+      {{- with .Site.Params.seo.logo }}
+      "logo": {
+        "@type": "ImageObject",
+        "url": {{ absURL . }}
+      }
+      {{- end }}
+      {{- /* Schema for single pages. */ -}}
+      {{ else }}
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ .Permalink }}"
+      },
+      "headline": "{{ .Title }}",
+      {{- with .Params.images }}
+      "image": {{ apply . "absURL" "." | jsonify | safeJS }},
+      {{- else }}
+      {{- with .Site.Params.seo.defaultImages }}
+      "image": {{ apply . "absURL" "." | jsonify | safeJS }},
+      {{- end }}
+      {{- end }}
+      "datePublished": "{{ .Date.Format "2006-01-02T14:15:59" }}",
+      "author": {
+        "@type": "Person",
+        "name": "{{ delimit .Site.Author ", " }}"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "{{ .Site.Title }}",
+        "url": "{{ absURL "" }}",
+        {{- with .Site.Params.seo.logo }}
+        "logo": {
+          "@type": "ImageObject",
+          "url": {{ absURL . }}
+        }
+        {{- end }}
+      }
+      {{- end }}
+    }
+    </script>
   </head>
   <header>
     <nav>

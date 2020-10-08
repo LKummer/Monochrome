@@ -1,6 +1,5 @@
 baseURL = "https://gohugo.io"
 title = "Hugo Themes"
-author = "Steve Francia"
 copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
 paginate = 3
 languageCode = "en"
@@ -12,8 +11,19 @@ theme = "hugo-theme-boilerplate"
 pygmentsUseClasses = true
 sectionPagesMenu = "main"
 
-[menu]
+[author]
+  name = "Steve Francia"
 
+[params]
+  [params.seo]
+    logo = "logo.png"
+    defaultImages = [
+      "image-1x1.png",
+      "image-4x3.png",
+      "image-16x9.png"
+    ]
+
+[menu]
   [[menu.main]]
     identifier = "about"
     name = "About"
@@ -26,29 +36,22 @@ tag = "tags"
 series = "series"
 
 [privacy]
-
   [privacy.vimeo]
     disabled = false
     simple = true
-
   [privacy.twitter]
     disabled = false
     enableDNT = true
     simple = true
-
   [privacy.instagram]
     disabled = false
     simple = true
-
   [privacy.youtube]
     disabled = false
     privacyEnhanced = true
 
 [services]
-
   [services.instagram]
     disableInlineCSS = true
-
   [services.twitter]
     disableInlineCSS = true
-
