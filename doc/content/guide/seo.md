@@ -2,7 +2,7 @@
 title: 'Search Engine Optimization'
 description: 'Learn to configure SEO features correctly.'
 categories:
-  - 'User Guides'
+  - 'Application'
 ---
 
 The theme includes structured data for search engine optimization. Make sure to
