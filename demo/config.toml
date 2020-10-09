@@ -9,7 +9,6 @@ footnoteReturnLinkContents = "^"
 
 theme = "hugo-theme-boilerplate"
 pygmentsUseClasses = true
-sectionPagesMenu = "main"
 
 [author]
   name = "Steve Francia"
@@ -25,13 +24,6 @@ sectionPagesMenu = "main"
       "image-4x3.png",
       "image-16x9.png"
     ]
-
-[menu]
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 10
 
 [taxonomies]
 category = "categories"
