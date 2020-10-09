@@ -1,5 +1,1 @@
-{{ define "main" }}
-<h1>
-  Hello World
-</h1>
-{{ end }}
+{{ with .GetPage .Site.Params.site.indexSection }}{{.Render}}{{end}}
