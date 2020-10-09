@@ -71,19 +71,22 @@
     font-weight: var(--type-weight-500);
   }
 
+  code {
+    font-family: var(--type-family-monospace);
+  }
+
   pre {
     background: var(--color-syntax-background);
-    color: var(--color-syntax-foreground);
     margin: 0 0 var(--space-400) 0;
     overflow: auto;
     padding: var(--space-400) var(--space-300);
   }
 
-  blockquote {
-    font-style: italic;
+  pre > code {
+    color: var(--color-syntax-foreground);
   }
 
-  code {
-    font-family: var(--type-family-monospace);
+  blockquote {
+    font-style: italic;
   }
 }

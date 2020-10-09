@@ -6,3 +6,19 @@ html {
   font-weight: var(--type-weight-400);
   line-height: 1.7;
 }
+
+a {
+  color: var(--color-accent-500);
+
+  &:hover {
+    color: var(--color-accent-400);
+  }
+
+  &:active {
+    color: var(--color-accent-300);
+  }
+}
+
+code {
+  color: var(--color-syntax-inline);
+}
