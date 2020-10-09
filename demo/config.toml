@@ -7,6 +7,7 @@ footnoteReturnLinkContents = "^"
 
 theme = "hugo-theme-boilerplate"
 pygmentsUseClasses = true
+sectionPagesMenu = "main"
 
 [author]
   name = "Steve Francia"
