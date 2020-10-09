@@ -2,6 +2,10 @@
   font-family: var(--type-family-accent);
   margin-bottom: var(--space-500);
 
+  &-spaced {
+    margin-top: var(--space-500);
+  }
+
   p {
     margin: 0 0 var(--space-300) 0;
   }
