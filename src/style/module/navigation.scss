@@ -1,6 +1,14 @@
+@use '@lkummer/break' as break;
+@use '../theme/screen';
+
 .navigation {
+  @include break.media-under('small', screen.$breakpoints) {
+    justify-content: center;
+  }
+
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   list-style: none;
 
   &-item {
@@ -26,11 +34,23 @@
     }
 
     &-title {
+      @include break.media-under('small', screen.$breakpoints) {
+        font-size: var(--type-size-300);
+        padding-bottom: var(--space-50);
+        padding-right: 0;
+      }
+
+      font-weight: var(--type-weight-600);
       margin: 0;
       padding-left: 0;
     }
 
     &-grow {
+      @include break.media-under('small', screen.$breakpoints) {
+        flex-basis: 100%;
+        text-align: center;
+      }
+
       flex-grow: 1;
     }
   }
