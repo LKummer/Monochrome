@@ -1,3 +1,6 @@
+@use '@lkummer/break' as break;
+@use 'screen';
+
 :root {
   --type-family-primary: 'Open Sans', sans-serif;
   --type-family-accent: 'Lora', serif;
@@ -10,4 +13,12 @@
   --type-weight-400: 400;
   --type-weight-500: 600;
   --type-weight-600: 700;
+
+  @include break.media-under('small', screen.$breakpoints) {
+    --type-size-100: 12pt;
+    --type-size-200: 14pt;
+    --type-size-300: 16pt;
+    --type-size-400: 17pt;
+    --type-size-500: 19pt;
+  }
 }
