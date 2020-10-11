@@ -11,7 +11,7 @@ configure all options correctly to achieve the best results.
 ## Site Configuration
 
 Configuring the site title and author(s) in the site configuration are required
-for the structured data to be correctly formed. 
+for the structured data to be correctly formed.
 
 ```toml
 title = "Hugo Themes"
