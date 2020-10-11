@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "https://lkummer.github.io/Monochrome/"
 title = "Hugo Theme Pack"
 languageCode = "en"
 DefaultContentLanguage = "en"
