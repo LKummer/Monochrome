@@ -25,13 +25,13 @@ Make sure to use a Hugo version newer than `0.65`.
 To build the site, open a command line in the quickstart site's directory and
 run Hugo:
 
-```bash
+```s
 $ hugo
 ```
 
 To run a hot reload dev server, run:
 
-```bash
+```s
 $ hugo server
 ```
 
