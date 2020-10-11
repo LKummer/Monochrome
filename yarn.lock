@@ -209,6 +209,21 @@
   dependencies:
     mkdirp "^1.0.4"
 
+"@openfonts/fira-code_latin@^1.44.8":
+  version "1.44.8"
+  resolved "https://registry.yarnpkg.com/@openfonts/fira-code_latin/-/fira-code_latin-1.44.8.tgz#9c6e8c75e3c27e4b7cb964ba81115ad47a0cc6c3"
+  integrity sha512-74mTNhRY0KS2XVqApKQUfuu8ev/NScejwRgzFDx8xyVDHT6VV+hdTiKFFPCURmhX9VwNJKJ/iTKeF9r/cL+fMQ==
+
+"@openfonts/lora_latin@^1.44.2":
+  version "1.44.2"
+  resolved "https://registry.yarnpkg.com/@openfonts/lora_latin/-/lora_latin-1.44.2.tgz#97c47e260fb8d9f6895750773fba862608ff44ad"
+  integrity sha512-Dln2mzc25pGmHU1SPtfga0up9PveXYk3MrhH7GoaVC1VgZDwiFMDS9zEOp3Coc6YWTXdncAvndiFL2Ehu2qBMg==
+
+"@openfonts/open-sans_latin@^1.44.2":
+  version "1.44.2"
+  resolved "https://registry.yarnpkg.com/@openfonts/open-sans_latin/-/open-sans_latin-1.44.2.tgz#6c73460974a99425a1cbd07dc18d65641fbb0639"
+  integrity sha512-dC6xezX1+JuaiCruYz0BpnKqec0/zBi8ckmvKmFE0nJkvJzd/1gZzCUglEnPyPGwgInWEIoc7bKiJycpfl/CFQ==
+
 "@sindresorhus/is@^0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
