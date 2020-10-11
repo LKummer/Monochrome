@@ -37,5 +37,5 @@ $ hugo server
 
 ## Further Customization
 
-In depth guides are available for customization and content management. Have a
-look at [the other User Guides]({{< ref "/guide" >}}#application).
+In depth guides are available for site configuration and SEO. Have a look at
+[the other User Guides]({{< ref "/guide" >}}#application).
