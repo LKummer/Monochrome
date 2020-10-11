@@ -10,9 +10,9 @@ masthead:
   buttons:
     - label: 'See the Demo'
       href: 'demo/'
-      color: 'accent'
     - label: 'Get Started'
       to: 'guide/getting-started/'
+      color: 'accent'
 introduction:
   title: 'Minimalist yet fully featured'
   text: >
