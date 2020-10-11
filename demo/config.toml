@@ -14,6 +14,7 @@ sectionPagesMenu = "main"
 
 [params]
   [params.site]
+    favicon = "favicon.svg"
     indexSection = "article"
   [params.seo]
     description = "Monochrome theme demo website."

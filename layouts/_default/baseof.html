@@ -8,6 +8,7 @@
     />
     <link rel="stylesheet" href="{{ absURL "/main.css" }}">
     <title>{{ .Title }}</title>
+    <link rel="icon" href="{{ absURL .Site.Params.site.favicon }}">
     <meta name="description" content="
     {{- with .Params.description -}}
     {{ . }}
