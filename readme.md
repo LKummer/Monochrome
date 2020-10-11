@@ -1,6 +1,12 @@
-# Hugo Theme
+<p align="center">
+    <img width=30% src="demo/static/favicon.svg">
+</p>
 
-> Webpack boilerplate for Hugo theme development
+# Monochrome Hugo Theme
+
+Minimalistic blog theme for Hugo.
+
+[See the documentation for more information](https://lkummer.github.io/Monochrome/).
 
 ## Development Guide
 
