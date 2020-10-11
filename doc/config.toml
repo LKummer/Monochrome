@@ -1,5 +1,5 @@
 baseURL = "https://lkummer.github.io/Monochrome/"
-title = "Hugo Theme Pack"
+title = "Monochrome"
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
@@ -12,7 +12,7 @@ pygmentsUseClasses = true
   [params.footer]
     title = "About"
     text = """
-    Hugo Theme Pack is project boilerplate for building Hugo themes with Webpack.
+    Monochrome Hugo Theme is a minimalistic Hugo theme for blogging.
     """
   [params.seo]
     category = "Hugo Theme"
@@ -21,28 +21,28 @@ pygmentsUseClasses = true
     operatingSystem = "Any"
     isFree = true
     license = "#"
-    defaultAuthor = "Hugo Theme Pack Contributors"
+    defaultAuthor = "Lior Kummer"
   [params.colors]
-    primary-600 = "hsl(240, 30%, 51%)"
-    primary-500 = "hsl(240, 30%, 54%)"
-    primary-400 = "hsl(240, 30%, 59%)"
-    accent-600 = "hsl(350, 60%, 43%)"
-    accent-500 = "hsl(350, 60%, 46%)"
-    accent-400 = "hsl(350, 60%, 50%)"
-    accent-300 = "hsl(350, 35%, 80%)"
-    accent-200 = "hsl(350, 33%, 82%)"
-    accent-100 = "hsl(350, 30%, 85%)"
-    background-900 = "hsl(340, 15%, 86%)"
-    background-400 = "hsl(340, 18%, 88%)"
-    background-300 = "hsl(340, 16%, 90%)"
-    background-200 = "hsl(340, 14%, 92%)"
-    background-100 = "hsl(340, 14%, 92%)"
+    primary-600 = "hsl(210, 45%, 40%)"
+    primary-500 = "hsl(210, 45%, 43%)"
+    primary-400 = "hsl(210, 40%, 48%)"
+    accent-600 = "hsl(330, 60%, 43%)"
+    accent-500 = "hsl(330, 60%, 46%)"
+    accent-400 = "hsl(330, 60%, 50%)"
+    accent-300 = "hsl(330, 35%, 80%)"
+    accent-200 = "hsl(330, 33%, 82%)"
+    accent-100 = "hsl(330, 30%, 85%)"
+    background-900 = "hsl(30, 15%, 86%)"
+    background-400 = "hsl(30, 18%, 88%)"
+    background-300 = "hsl(30, 16%, 90%)"
+    background-200 = "hsl(30, 14%, 92%)"
+    background-100 = "hsl(30, 14%, 92%)"
     text-900 = "hsla(0, 0%, 0%, 0.75)"
     text-800 = "hsla(0, 0%, 0%, 0.7)"
     text-700 = "hsla(0, 0%, 0%, 0.65)"
-    text-500 = "hsl(350, 60%, 43%)"
-    text-400 = "hsl(350, 60%, 46%)"
-    text-300 = "hsl(350, 60%, 50%)"
+    text-500 = "hsl(330, 60%, 43%)"
+    text-400 = "hsl(330, 60%, 46%)"
+    text-300 = "hsl(330, 60%, 50%)"
     text-200 = "hsla(0, 0%, 100%, 0.85)"
     text-100 = "hsla(0, 0%, 0%, 0.7)"
     highlight-text = "hsl(240, 35%, 99%)"
@@ -51,6 +51,19 @@ pygmentsUseClasses = true
     highlight-special = "hsl(180, 75%, 55%)"
     highlight-operator = "hsl(330, 95%, 75%)"
     highlight-literal = "hsl(250, 80%, 70%)"
+  [params.graphics]
+    logo = """
+    <svg class="navbar-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      viewBox="5 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+    <style type="text/css">
+      .st0{fill:#CCC9C6;}
+      .st1{fill:#332518;}
+    </style>
+    <polygon class="st0" points="10.3,18 7,18 7,9.5"/>
+    <polygon class="st1" points="13.7,18 13,19.8 13,20 11,20 11,19.8 7,9.5 7,20 5,20 5,4 7,4 12.4,18"/>
+    <polygon class="st1" points="19,4 19,20 17,20 17,6 16.2,6 17,4"/>
+    </svg>
+    """
 
 [taxonomies]
 category = "categories"
