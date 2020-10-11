@@ -19,6 +19,6 @@ bottom:
   text: 'See the Github Issues'
   buttons:
     - label: 'Github Issues'
-      href: '#'
+      href: 'https://github.com/LKummer/Monochrome/issues'
       color: 'accent'
 ---

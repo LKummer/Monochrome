@@ -12,7 +12,7 @@ By the end of this guide you should have a Hugo site ready to be generated.
 The theme has a quickstart-site archive for every release. The archive contains a
 demo blog ready with the theme already set up inside.
 
-Head over to the theme's releases on Github
+Head over to [the theme's releases on Github](https://github.com/LKummer/Monochrome/releases)
 and download the quickstart-site archive of the latest version.
 
 After downloading, extract the quickstart site into an empty directory. The site

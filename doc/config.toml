@@ -65,6 +65,14 @@ pygmentsUseClasses = true
     </svg>
     """
 
+[menu]
+  [[menu.main]]
+    name = "Releases"
+    url = "https://github.com/LKummer/Monochrome/releases"
+  [[menu.footer]]
+    name = "Releases"
+    url = "https://github.com/LKummer/Monochrome/releases"
+
 [taxonomies]
 category = "categories"
 
