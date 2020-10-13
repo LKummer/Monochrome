@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0">
+    <title>Search Engine Optimization - Monochrome</title>
+    
+
+
+<link rel="stylesheet" href="/Monochrome/main.css">
+
+
+    
+<meta name="description" content="Learn to configure SEO features correctly.">
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Search Engine Optimization",
+    "author": {
+        "@type": "Person",
+        "name": "Lior Kummer"
+    },
+    "wordCount":  202 ,
+    "isAccessibleForFree": "true",
+    "license": "#",
+    "description": "Learn to configure SEO features correctly."
+}
+</script>
+
+    
+
+<style>
+:root {
+    --color-accent-100: hsl(330, 30%, 85%);
+    --color-accent-200: hsl(330, 33%, 82%);
+    --color-accent-300: hsl(330, 35%, 80%);
+    --color-accent-400: hsl(330, 70%, 45%);
+    --color-accent-500: hsl(330, 73%, 42%);
+    --color-accent-600: hsl(330, 76%, 40%);
+    --color-background-100: hsl(30, 14%, 92%);
+    --color-background-200: hsl(30, 14%, 92%);
+    --color-background-300: hsl(30, 16%, 90%);
+    --color-background-400: hsl(30, 18%, 88%);
+    --color-background-900: hsl(30, 15%, 86%);
+    --color-highlight-background: hsl(240, 13%, 14%);
+    --color-highlight-comment: hsl(250, 25%, 55%);
+    --color-highlight-literal: hsl(250, 80%, 70%);
+    --color-highlight-operator: hsl(330, 95%, 75%);
+    --color-highlight-special: hsl(180, 75%, 55%);
+    --color-highlight-text: hsl(240, 35%, 99%);
+    --color-primary-400: hsl(30, 95%, 45%);
+    --color-primary-500: hsl(30, 98%, 42%);
+    --color-primary-600: hsl(30, 100%, 40%);
+    --color-text-100: hsla(0, 0%, 0%, 0.7);
+    --color-text-200: hsla(0, 0%, 100%, 0.85);
+    --color-text-300: hsl(330, 60%, 50%);
+    --color-text-400: hsl(330, 60%, 46%);
+    --color-text-500: hsl(330, 60%, 43%);
+    --color-text-700: hsla(0, 0%, 0%, 0.65);
+    --color-text-800: hsla(0, 0%, 0%, 0.7);
+    --color-text-900: hsla(0, 0%, 0%, 0.75);
+    }
+</style>
+
+
+    
+    <link rel="icon" href="/Monochrome/favicon.svg">
+    
+</head>
+
+<body>
+    
+<div>
+    <header class="navbar">
+        <a class="navbar-logo-link" href="https://lkummer.github.io/Monochrome/">
+            
+                <svg class="navbar-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      viewBox="5 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+    <style type="text/css">
+      .st0{fill:#CCC9C6;}
+      .st1{fill:#332518;}
+    </style>
+    <polygon class="st0" points="10.3,18 7,18 7,9.5"/>
+    <polygon class="st1" points="13.7,18 13,19.8 13,20 11,20 11,19.8 7,9.5 7,20 5,20 5,4 7,4 12.4,18"/>
+    <polygon class="st1" points="19,4 19,20 17,20 17,6 16.2,6 17,4"/>
+    </svg>
+    
+            
+            <h1 class="navbar-logo-title">
+                Monochrome
+            </h1>
+        </a>
+        
+        
+        <span class="navbar-spacer"></span>
+        <nav>
+            <ul class="navbar-navigation">
+                
+                <li>
+                <a href="https://lkummer.github.io/Monochrome/guide/" class="navbar-navigation-item">
+                    Guides
+                </a>
+                </li>
+                
+                <li>
+                <a href="https://github.com/LKummer/Monochrome/releases" class="navbar-navigation-item">
+                    Releases
+                </a>
+                </li>
+                
+            </ul>
+        </nav>
+        
+    </header>
+</div>
+
+<main class="l-single">
+    <aside class="toc l-single-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#site-configuration">Site Configuration</a></li>
+    <li><a href="#page-configuration">Page Configuration</a></li>
+  </ul>
+</nav>
+    </aside>
+    
+    <article class="article l-single-article">
+        <nav>
+            <ul class="article-breadcrumbs">
+                <li class="article-breadcrumbs-item">
+                    <a href="https://lkummer.github.io/Monochrome/guide">
+                        Guides
+                    </a>
+                </li>
+                <li class="article-breadcrumbs-item">
+                    <a href="https://lkummer.github.io/Monochrome/guide#application">
+                        Application
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <h1 class="article-title">
+            Search Engine Optimization
+        </h1>
+        <section class="article-content">
+            <p>The theme includes structured data for search engine optimization. Make sure to
+configure all options correctly to achieve the best results.</p>
+<h2 id="site-configuration">Site Configuration</h2>
+<p>Configuring the site title and author(s) in the site configuration are required
+for the structured data to be correctly formed.</p>
+<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;Hugo Themes&#34;</span>
+
+<span class="p">[</span><span class="nx">author</span><span class="p">]</span>
+  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Steve Francia&#34;</span>
+</code></pre></div><p>A description, organization logo and default article images are also required.</p>
+<p>The organization logo <code>params.seo.logo</code> image must be in either JPG or PNG
+format, and sized 600px wide and 60px high.
+<a href="https://developers.google.com/search/docs/data-types/article#logo-guidelines">As per Google&rsquo;s AMP logo guidelines</a>.</p>
+<p>The default article images <code>params.seo.defaultImages</code> should contain three
+images, all of them at least 1200px wide.
+The images should have 1x1, 4x3 and 16x9 aspect ratios for the best results.
+For more information
+<a href="https://developers.google.com/search/docs/data-types/article#article-types">see the documentation of the image property of articles</a>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+  <span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">seo</span><span class="p">]</span>
+    <span class="nx">description</span> <span class="p">=</span> <span class="s2">&#34;Monochrome theme demo website.&#34;</span>
+    <span class="nx">logo</span> <span class="p">=</span> <span class="s2">&#34;logo.png&#34;</span>
+    <span class="nx">defaultImages</span> <span class="p">=</span> <span class="p">[</span>
+      <span class="s2">&#34;image-1x1.png&#34;</span><span class="p">,</span>
+      <span class="s2">&#34;image-4x3.png&#34;</span><span class="p">,</span>
+      <span class="s2">&#34;image-16x9.png&#34;</span>
+    <span class="p">]</span>
+</code></pre></div><p><strong>Do not</strong> begin image locations with a <code>/</code> as it will cause issues with Hugo&rsquo;s
+URL functions.</p>
+<h2 id="page-configuration">Page Configuration</h2>
+<p>Each page should have a <code>description</code> and optimally it&rsquo;s own <code>images</code>.</p>
+<p>Page <code>images</code> <em>should</em> follow the same guidelines as <code>defaultImages</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">description</span> <span class="p">=</span> <span class="s2">&#34;Nice description for your article.&#34;</span>
+<span class="nx">images</span> <span class="p">=</span> <span class="p">[</span>
+  <span class="s2">&#34;image-1x1.png&#34;</span><span class="p">,</span>
+  <span class="s2">&#34;image-4x3.png&#34;</span><span class="p">,</span>
+  <span class="s2">&#34;image-16x9.png&#34;</span>
+<span class="p">]</span>
+</code></pre></div>
+        </section>
+    </article></main>
+    <footer class="footer">
+    <div class="footer-container l-offset l-offset-start">
+        <section class="content content-dark">
+            
+            <h1 class="content-title">
+                About
+            </h1>
+            
+            
+            <p class="content-text">
+                    Monochrome Hugo Theme is a minimalistic Hugo theme for blogging.
+    
+            </p>
+            
+        </section>
+        
+        <nav>
+            <ul class="lowernav">
+                
+                <li>
+                    <a href="https://lkummer.github.io/Monochrome/" class="lowernav-item">
+                        Home
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://lkummer.github.io/Monochrome/guide/" class="lowernav-item">
+                        Guides
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/LKummer/Monochrome/releases" class="lowernav-item">
+                        Releases
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+        
+    </div>
+</footer>
+
+    <script src="/Monochrome/main.js"></script>
+</body>
+</html>

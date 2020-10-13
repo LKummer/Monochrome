@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" class="l-container">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+    />
+    <link rel="stylesheet" href="https://lkummer.github.io/Monochrome/demo/main.css">
+    <title>Math Typesetting</title>
+    <link rel="icon" href="https://lkummer.github.io/Monochrome/demo/favicon.svg">
+    <meta name="description" content="A brief guide to setup KaTeX"/>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/lkummer.github.io\/Monochrome\/demo\/article\/math-typesetting\/"
+      },
+      "headline": "Math Typesetting",
+      "image": ["https://lkummer.github.io/Monochrome/demo/image-1x1.png","https://lkummer.github.io/Monochrome/demo/image-4x3.png","https://lkummer.github.io/Monochrome/demo/image-16x9.png"],
+      "datePublished": "2019-03-08T30:00:09",
+      "author": {
+        "@type": "Person",
+        "name": "Steve Francia"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Hugo Themes",
+        "url": "https:\/\/lkummer.github.io\/Monochrome\/demo\/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://lkummer.github.io/Monochrome/demo/logo.png"
+        }
+      }
+    }
+    </script>
+  </head>
+  <header>
+    <nav>
+      <ul class="navigation">
+        <li class="navigation-item-grow">
+          <a href="https://lkummer.github.io/Monochrome/demo/">
+            <h1 class="navigation-item navigation-item-title">
+              Hugo Themes
+            </h1>
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a href="https://lkummer.github.io/Monochrome/demo/about/" class="navigation-item">
+            About
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://lkummer.github.io/Monochrome/demo/article/" class="navigation-item
+          navigation-item-active">
+            Articles
+          </a>
+        </li>
+        
+        
+      </ul>
+    </nav>
+  </header>
+  <body>
+<h1 class="post-title">
+  Math Typesetting
+</h1>
+<ul class="post-tags">
+  <li class="post-tags-date">
+    8/3/2019
+  </li>
+  
+</ul>
+<section class="text">
+  <p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.</p>
+
+<p>In this example we will be using <a href="https://katex.org/">KaTeX</a></p>
+
+<ul>
+<li>Create a partial under <code>/layouts/partials/math.html</code></li>
+<li>Within this partial reference the <a href="https://katex.org/docs/autorender.html">Auto-render Extension</a> or host these scripts locally.</li>
+<li>Include the partial in your templates like so:<br></li>
+</ul>
+<pre><code>{{ if or .Params.math .Site.Params.math }}
+{{ partial &#34;math.html&#34; . }}
+{{ end }}</code></pre>
+<ul>
+<li>To enable KaTex globally set the parameter <code>math</code> to <code>true</code> in a project's configuration</li>
+<li>To enable KaTex on a per page basis include the parameter <code>math: true</code> in content files.</li>
+</ul>
+
+<p><strong>Note:</strong> Use the online reference of <a href="https://katex.org/docs/supported.html">Supported TeX Functions</a>
+
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css" integrity="sha384-dbVIfZGuN1Yq7/1Ocstc1lUEm+AT+/rCkibIcC/OmWo5f0EA48Vf8CytHzGrSwbQ" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js" integrity="sha384-2BKqo+exmr9su6dir+qCw08N2ZKRucY4PrGQPPWU1A7FtlCGjmEGFqXCv5nyM5Ij" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+</p>
+
+<h3 id="examples">Examples</h3>
+
+<p>Inline math: <span  class="math">\( \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… \)</span></p>
+
+<p>Block math:</p>
+
+<p><span  class="math">\[
+ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
+\]</span></p>
+</section>
+
+    <script src='https://lkummer.github.io/Monochrome/demo/main.js'></script>
+  </body>
+</html>
